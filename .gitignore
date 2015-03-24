@@ -21,3 +21,10 @@ UNITY/ChaseDemo/ChaseDemo-csharp.sln
 UNITY/ChaseDemo/ChaseDemo-csharp.v12.suo
 UNITY/ChaseDemo/ChaseDemo.sln
 UNITY/ChaseDemo/ChaseDemo.userprefs
+
+UNITY/OutScreenIndicator/Assembly-CSharp-vs.csproj
+UNITY/OutScreenIndicator/Assembly-CSharp.csproj
+UNITY/OutScreenIndicator/OutScreenIndicator-csharp.sln
+UNITY/OutScreenIndicator/OutScreenIndicator-csharp.v12.suo
+UNITY/OutScreenIndicator/OutScreenIndicator.sln
+UNITY/OutScreenIndicator/OutScreenIndicator.userprefs

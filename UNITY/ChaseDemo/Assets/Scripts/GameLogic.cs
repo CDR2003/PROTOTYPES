@@ -38,6 +38,6 @@ public class GameLogic : MonoBehaviour
 			} );
 		} );
 
-		fracTimeSequence.Subscribe( d => this.player.direction.Value = Vector3.Cross( Vector3.back, this.mob.direction.Value ).normalized * d );
+		fracTimeSequence.Subscribe( _ => this.player.direction.Value = Vector3.Cross( Vector3.back, this.mob.direction.Value ).normalized );
 	}
 }
