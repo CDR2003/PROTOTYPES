@@ -35,21 +35,6 @@ namespace FdmGames
 			return this.RemoveIndicator( indicator, destroy );
 		}
 
-		// Test
-		public OutScreenIndicator testIndicator;
-
-		// Test
-		public Transform testTarget;
-
-		// Test
-		void Start()
-		{
-			var obj = Object.Instantiate( this.testIndicator.gameObject ) as GameObject;
-			var indicator = obj.GetComponent<OutScreenIndicator>();
-			indicator.target = this.testTarget;
-			this.AddIndicator( indicator );
-		}
-
 		void Update()
 		{
 			foreach( var indicator in _indicators )

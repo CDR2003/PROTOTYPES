@@ -34,12 +34,17 @@ namespace FdmGames
 		{
 			for( int i = 0; i < this.wall.pathCount; i++ )
 			{
-				var lineSegment = this.wall.GetPath( i );
-				var ray = new Ray2D( this.transform.parent.position, direction );
-				var intersection = Geometry2D.RayIntersectsLineSegment( ray, lineSegment[0], lineSegment[1] );
-				if( intersection.HasValue )
+				var path = this.wall.GetPath( i );
+				for( int j = 0; j < path.Length; j++ )
 				{
-					return intersection.Value;
+					var startPoint = path[j];
+					var endPoint = path[( j + 1 ) % path.Length];
+					var ray = new Ray2D( Vector2.zero, direction );
+					var intersection = Geometry2D.RayIntersectsLineSegment( ray, startPoint, endPoint );
+					if( intersection.HasValue )
+					{
+						return intersection.Value;
+					}
 				}
 			}
 
